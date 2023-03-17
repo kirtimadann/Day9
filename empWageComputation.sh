@@ -1,6 +1,10 @@
 
 
 
+echo "Welcome to Employee Wage Computation Program";
+
+
+
 ispresent=1;
 randomcheck="$((RANDOM%2))";
 
