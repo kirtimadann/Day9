@@ -58,3 +58,33 @@ salary=$(($emphr*$emprateperhr));
 esac
 
 
+isfulltime=2;
+isparttime=1;
+workingday=20;
+totalsalary=0;
+emprateperhrs=20;
+
+for(( day=0; day<=$workingday; day++ ))
+do
+
+empcheck=$((RANDOM%3));
+
+case $empcheck in
+    $isfulltime)
+    emphrs=8
+     ;;
+
+
+    $isparttime)
+    emphrs=4
+     ;;
+
+     *)
+esac
+
+
+salary=$(($emphrs*$emprateperhrs));
+totalsalary=$(($workingday*$salary));
+
+done
+
